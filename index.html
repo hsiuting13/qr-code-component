@@ -18,9 +18,14 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      body {
+      *{
         margin:0;
         padding:0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        
         font-family: 'Outfit', sans-serif;
         font-size:15px;
         background-color: hsl(212, 45%, 89%);
@@ -31,13 +36,11 @@
         justify-content:center;
        
       }
+
       .outer-box{
         background:hsl(0, 0%, 100%);
         width:220px;
         border-radius: 10px;
-        /* box-shadow: 10px 5px 5px hsl(218, 44%, 22%); */
-       
-       
       }
       .items-box{
         display:flex;
@@ -59,17 +62,12 @@
         color:hsl(220, 15%, 55%)
       }
       p{
+        margin:20px;
         width:170px;
         text-align: center;
         
       }
-      .attribution {
-        font-size: 15px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
+
     </style>
   </head>
   <body>
@@ -88,11 +86,6 @@
      
     </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Hsiu Ting</a>.
-    </div>
+ 
   </body>
 </html>
