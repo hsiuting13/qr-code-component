@@ -4,17 +4,17 @@
   box-sizing: border-box;
 }
 :root {
-    --bg-page: hsl(212, 45%, 89%);
-    --bg-card: hsl(0, 0%, 100%);
-    --text-primary: hsl(218, 44%, 22%);
-    --text-secondary: hsl(216, 15%, 48%);
+  --bg-page: hsl(212, 45%, 89%);
+  --bg-card: hsl(0, 0%, 100%);
+  --text-primary: hsl(218, 44%, 22%);
+  --text-secondary: hsl(216, 15%, 48%);
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family:"outfit", system-ui, sans-serif;
+  font-family: "outfit", system-ui, sans-serif;
 }
 
 body {
@@ -22,39 +22,57 @@ body {
   display: flex;
   flex-direction: column;
   background: var(--bg-page);
-  font-size:15px;
+  font-size: 15px;
   justify-content: center;
   align-items: center;
 }
-article, img {
- display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius:3%;
+article,
+img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3%;
 }
 article {
-    background: var(--bg-card);
-    width:20rem;
-    padding:1rem;
+  background: var(--bg-card);
+  width: 20rem;
+  padding: 1rem;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 img {
-    width:100%;
+  width: 100%;
 }
 
-h1, p {
-    text-align: center;
+h1,
+p {
+  text-align: center;
 }
 
 h1 {
-    color: var(--text-primary);
-    font-size:1.4rem;
-    margin-top:1.5rem;
+  color: var(--text-primary);
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
 }
 
 p {
-    margin: 0 0 1.6rem 0;
-    color: var(--text-secondary);
-    font-size:1.02rem;
+  margin: 0 0.6rem 1.6rem 0.6rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+@media (min-width: 1440px) {
+  
+  article {
+    width:15rem;
+    padding:.5rem;
+  }
+  h1 {
+    margin-top:.9rem;
+    font-size:1.1rem;
+  }
+  p{
+    font-size:.75rem;
+  }
 }
